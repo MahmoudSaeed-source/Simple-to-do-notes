@@ -1,0 +1,168 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Lora', serif;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #252b74;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#C683D7;
+}
+.ToDo_Content{
+  width: 60%;
+  height: 90%;
+  padding: 8px;
+  background-color: #333981;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius:8px ;
+  -webkit-border-radius:8px ;
+  -moz-border-radius:8px ;
+  -ms-border-radius:8px ;
+  -o-border-radius:8px ;
+  overflow: hidden;
+}
+.container{
+  height: auto;
+  overflow: auto;
+}
+.title_Shadow{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 8px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  text-shadow: 3px 0px 5px rgba(128, 0, 0, 0.84);
+  font-size: 18px;
+}
+.name_Shadow{
+  width: 100%;
+  height: 30px;
+  padding: 8px;
+text-transform: uppercase;
+  letter-spacing: 6px;
+  text-shadow: 3px 0px 5px  rgba(128, 0, 0, 0.84) ;
+  font-size: 12px;
+}
+.Input_container{
+width: 100%;
+height: 80px;
+padding: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.Input_container input{
+  width: 80%;
+  height: 80%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  padding: 4px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+.checked_remove_All{
+  width: 100%;
+  height:40px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+    letter-spacing: 6px;
+    text-shadow: 3px 0px 5px rgba(128, 0, 0, 0.84);
+    font-size: 12px;
+    cursor:pointer;
+    margin-bottom: 10px;
+    display: none;
+}
+.RemoveDate{
+ width:50%;
+ height:100%;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ display:flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 8px;
+ -webkit-border-radius: 8px;
+ -moz-border-radius: 8px;
+ -ms-border-radius: 8px;
+ -o-border-radius: 8px;
+}
+.tasks_Container {
+  width: 100%;
+  height:340px;
+  /* Set a fixed height for scrolling */
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+ 
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+}
+.tasks_Container li{
+  width:100%;
+  height:60px;
+  display: flex;
+  text-transform: uppercase;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.Task_name{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.Btn_Delete{
+  width: 20%;
+  height: 100%;
+  background-color: #252b74;
+  color:aliceblue;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lora', serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.CheckedElement{
+  color:dimgrey;
+  text-decoration: line-through !important;
+}
+@media screen and (max-width:767px) {
+  .ToDo_Content{
+    width: 100%;
+    height: 100%;
+  }
+}
